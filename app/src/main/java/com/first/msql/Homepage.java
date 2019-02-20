@@ -53,7 +53,7 @@ public class Homepage extends AppCompatActivity
     String p;
     TextView t1;
     SharedPreferences sharedpreferences;
-    //jjj
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
