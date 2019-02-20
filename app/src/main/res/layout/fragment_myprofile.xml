@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Myprofile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/cover"
+            android:id="@+id/myprofilecover"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update profile photo"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/udateprofilepictext"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_edit"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/editprofile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="update cover photo"
+            android:layout_marginLeft="250dp"
+            android:textSize="10dp"
+            android:id="@+id/updatecovertext"
+            android:layout_marginTop="30dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/updatecoverphoto"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/defaultuser"
+            android:id="@+id/profilepic"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="70dp"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full name"
+                android:id="@+id/profilename"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp">
+            <TextView
+                android:id="@+id/gender_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_marginLeft="70dp"
+                android:textSize="15dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/gender_radio_groupp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gender_textview"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male_radio_btnp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="male"
+                    android:textSize="10dp"
+                    android:checked="true"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <RadioButton
+                    android:id="@+id/female_radio_btnp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text = "female"
+                    android:textSize="10dp"
+
+
+                    />
+            </RadioGroup>
+        </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="70dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Address"
+                android:id="@+id/eaddress"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="70dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:id="@+id/emailp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="70dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:id="@+id/profilemb"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="425dp"
+            android:layout_marginLeft="70dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:id="@+id/eloc"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="70dp"
+            android:text="Save"
+            android:textColor="@color/black"
+
+            android:background="@drawable/button"
+            android:id="@+id/regsave"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

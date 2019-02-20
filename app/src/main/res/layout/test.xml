@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/cvt"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ttitle"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:id="@+id/from"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/date"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:id="@+id/to"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/date1"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Status"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:id="@+id/status"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/attend"
+            android:text="Attend"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="260dp"/>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

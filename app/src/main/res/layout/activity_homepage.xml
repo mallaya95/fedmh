@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_homepage"
+        app:menu="@menu/activity_homepage_drawer" >
+
+        <ImageView
+            android:id="@+id/imageuserpic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/defaultuser"
+            />
+        <ImageView
+            android:id="@+id/imaged"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/ic_menu_camera"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:text=""
+            android:layout_marginTop="30dp"
+            android:id="@+id/usern"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_edit"
+            android:id="@+id/editname"/>
+
+        <TextView
+            android:id="@+id/usermailn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="50dp"
+            />
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
