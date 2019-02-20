@@ -121,7 +121,7 @@ public class Questions extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_questions, container, false);
-        final TextView t1=(TextView)view.findViewById(R.id.tx);
+
 
         rv=(RecyclerView)view.findViewById(R.id.rvq);
         rv.setHasFixedSize(true);
