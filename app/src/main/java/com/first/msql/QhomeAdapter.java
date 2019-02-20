@@ -58,7 +58,7 @@ public class QhomeAdapter extends RecyclerView.Adapter<QhomeAdapter.ViewHolder> 
 
                 holder.t1.setText(data2.get(position).testset);
                 holder.t2.setText(data2.get(position).date);
-                holder.t3.setText(data2.get(position).status);
+            //    holder.t3.setText(data2.get(position).status);
                 holder.t4.setText(data2.get(position).date1);
               //  holder.ans=item.status;
 
@@ -69,7 +69,7 @@ public class QhomeAdapter extends RecyclerView.Adapter<QhomeAdapter.ViewHolder> 
             public void onClick(View view) {
                 AppCompatActivity activity = (AppCompatActivity) view.getContext();
 
-                if (holder.t3.getText().toString().equals("no") )
+                if ( data2.get(position).status.equals("no") )
                 {
                     Toast.makeText(activity,"sorry",Toast.LENGTH_SHORT).show();
                 }
@@ -104,40 +104,29 @@ public class QhomeAdapter extends RecyclerView.Adapter<QhomeAdapter.ViewHolder> 
             t4=(TextView)itemView.findViewById(R.id.date1);
             t3=(TextView)itemView.findViewById(R.id.status);
             cv=(CardView)itemView.findViewById(R.id.cvt);
-            b1=(Button)itemView.findViewById(R.id.attend);
-            b1.setTransformationMethod(null);
-            b1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Toast.makeText(view.getContext(),t3.getText().toString(),Toast.LENGTH_LONG).show();
-                }
-            });
-
-            for(int k = 0; k < data2.size();k++)
-            {
-
-                testset t = data2.get(k);
-                if(t.getStatus().equals("no"))
-                {
-                    b1.setBackgroundColor(Color.RED);
-                }
-                else if (t.getStatus().equals("yes") )
-                {
-                    b1.setBackgroundColor(Color.GREEN);
-                }
-            }
-
-
-
-//                if(t3.getText().toString()== "yes")
-//                {
-//                    b1.setBackgroundColor(Color.GREEN);
+//            b1=(Button)itemView.findViewById(R.id.attend);
+//            b1.setTransformationMethod(null);
+//            b1.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//
+//                    Toast.makeText(view.getContext(),t3.getText().toString(),Toast.LENGTH_LONG).show();
 //                }
-//                else if(t3.getText().toString()== "no")
+//            });
+
+//            for(int k = 0; k < data2.size();k++)
+//            {
+//
+//                testset t = data2.get(k);
+//                if(t.getStatus().equals("no"))
 //                {
 //                    b1.setBackgroundColor(Color.RED);
 //                }
-
+//                else if (t.getStatus().equals("yes") )
+//                {
+//                    b1.setBackgroundColor(Color.GREEN);
+//                }
+//            }
 
 
 
