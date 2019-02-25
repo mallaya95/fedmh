@@ -197,8 +197,8 @@ public class Homepage extends AppCompatActivity
             Intent i=new Intent(getApplicationContext(),Homepage.class);
             startActivity(i);
         } else if (id == R.id.nav_Profile) {
-            Fragment f11=Myprofile.newInstance ("","");
-            setme(f11);
+//            Fragment f11=Myprofile.newInstance ("","");
+//            setme(f11);
 
 
         }

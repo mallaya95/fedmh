@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         e2.setText("123456");
         b1.setTransformationMethod(null);
         sharedpreferences = getSharedPreferences("cuser", Context.MODE_PRIVATE);
-        objHome = new Intent(getApplicationContext(),Homepage.class);
+        objHome = new Intent(getApplicationContext(),adminhome.class);
         getObjHome1 = new Intent(getApplicationContext(),Adminhomepage.class);
 
     }
