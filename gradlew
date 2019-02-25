@@ -35,7 +35,6 @@ MAX_FD="maximum"
 
 warn () {
     echo "$*"
-    
 }
 
 die () {
@@ -59,7 +58,6 @@ case "`uname`" in
     ;;
   MINGW* )
     msys=true
-    
     ;;
   NONSTOP* )
     nonstop=true
